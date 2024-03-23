@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
-        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-          sans-serif;
+        font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         font-size: calc(10px + 0.33vw);
         -webkit-font-smoothing: antialiased;
         padding: 5vh 10vw;
@@ -26,14 +24,33 @@
         line-height: 1.4;
         max-width: 28em;
       }
+
       a {
         text-decoration: none;
         white-space: nowrap;
         color: #121314;
         position: relative;
+        border: 1px solid rgba(79, 192, 141, 0.5);
+        padding: 0.2em 0.4em;
+        border-radius: 0.2em;
+        margin-right: 0.5em;
       }
+
+      a:last-child {
+        margin-right: 0;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .links a {
+        margin-bottom: 1em;
+      }
+
       a:after {
-        content: '';
+        content: "";
         position: absolute;
         z-index: -1;
         top: 66%;
@@ -51,14 +68,11 @@
   <body>
     <h1>Hello.</h1>
     <p style="font-weight: 500; font-size: 2.2em">My name is Evan Sky.</p>
-    <p>
-      <a href="https://github.com/evanhy" target="_blank">GitHub</a>.
-      <br>
-      <a href="https://www.huyu001.top" target="_blank">个人博客</a>.
-      <br>
-      <a href="https://blog.webhy.cn" target="_blank">个人笔记</a>.
-      <br>
-      <a href="https://vitepress-blog-six.vercel.app" target="_blank">前端导航</a>.
+    <p class="links">
+      <a href="https://github.com/evanhy" target="_blank">GitHub</a>
+      <a href="https://www.huyu001.top" target="_blank">个人博客</a>
+      <a href="https://blog.webhy.cn" target="_blank">个人笔记</a>
+      <a href="https://vitepress-blog-six.vercel.app" target="_blank">前端导航</a>
     </p>
   </body>
 </html>
